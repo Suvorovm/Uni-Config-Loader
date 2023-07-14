@@ -1,6 +1,6 @@
 {
   "name": "com.suvorov.config-loader",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "displayName": "Config loader",
   "description": "This is  package for firebase remote config",
   "unity": "2022.1",

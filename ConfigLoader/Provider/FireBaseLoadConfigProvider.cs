@@ -42,7 +42,7 @@ namespace Config.Provider
                 throw new ConfigLoadException("Firebase init error ");
             }
 
-            await Firebase.RemoteConfig.FirebaseRemoteConfig.DefaultInstance.FetchAsync().AsUniTask();
+            await Firebase.RemoteConfig.FirebaseRemoteConfig.DefaultInstance.FetchAsync(TimeSpan.Zero).AsUniTask();
             await Firebase.RemoteConfig.FirebaseRemoteConfig.DefaultInstance.ActivateAsync().AsUniTask();
             _initedCorrected = true;
         }
